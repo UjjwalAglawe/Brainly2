@@ -11,6 +11,7 @@ import axios from 'axios'
 import { LogoutIcon } from '../icons/LogoutIcon'
 import { useNavigate } from 'react-router-dom'
 import { toast, ToastContainer } from 'react-toastify';
+import { VITE_BACKEND_URL } from "../constant";
 
 
 
@@ -19,7 +20,8 @@ function Dashboard() {
   const {content,refresh} = useContent();
   console.log("Baas");
   
-  const BACKEND_URL2 = import.meta.env.VITE_BACKEND_URL;
+  // const BACKEND_URL2 = import.meta.env.VITE_BACKEND_URL;
+  const BACKEND_URL2 = VITE_BACKEND_URL 
   console.log("Backend URL:", BACKEND_URL2);
   
   const navigate = useNavigate();

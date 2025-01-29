@@ -4,7 +4,9 @@ import { Input } from "../components/Input";
 import axios from "axios";
 // import { BACKEND_URL } from "../config";
 import { useNavigate } from "react-router-dom";
-const BACKEND_URL2 = import.meta.env.VITE_BACKEND_URL;
+import { VITE_BACKEND_URL } from "../constant";
+const BACKEND_URL2 = VITE_BACKEND_URL 
+// const BACKEND_URL2 = import.meta.env.VITE_BACKEND_URL;
 
 export function Signup() {
 

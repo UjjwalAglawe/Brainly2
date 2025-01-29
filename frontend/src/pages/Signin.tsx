@@ -5,8 +5,15 @@ import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-const BACKEND_URL2 = import.meta.env.VITE_BACKEND_URL;
+import { VITE_BACKEND_URL } from "../constant";
+const BACKEND_URL2 = VITE_BACKEND_URL 
+// const BACKEND_URL2 = process.env.VITE_BACKEND_URL;
+// const BACKEND_URL2 = import.meta.env.VITE_BACKEND_URL;
 
+
+
+console.log("here");
+console.log(BACKEND_URL2);
 
 export function Signin() {
     const usernameRef = useRef<HTMLInputElement>(null);
