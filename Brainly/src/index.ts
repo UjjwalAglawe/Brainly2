@@ -23,7 +23,13 @@ app.use(express.json());
 // }));
 
 // app.options('*', cors());
-app.use(cors());
+const corsOptions = {
+    origin:'https://brainly2.onrender.com',
+    credentials:true
+}
+
+app.use(cors(corsOptions));
+// app.use(cors());
 const _dirname=path.resolve();
 
 
